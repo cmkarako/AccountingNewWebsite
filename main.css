@@ -546,6 +546,10 @@ a.active, a:hover {
 }
 
 @media (max-width: 952px) {
+	.box.left-image{
+		max-height: 250px;
+		min-width: 300px;
+	}
 	label.navbar {
 		font-size: 24px;
 
@@ -575,6 +579,9 @@ a.active, a:hover {
 @media (max-width: 858px) {
 	.header h2 {
 		font-size: 40px;
+	}
+	.image-text {
+		padding-top: 5%;
 	}
 	.header h3 {
 		font-family: Apple Chancery, cursive;
@@ -622,7 +629,7 @@ a.active, a:hover {
 	}
 	.services p {
 		margin-top: 6px;
-		font-size: 16px;
+		font-size: 18px;
 	}
 	.welcome p {
 		font-size: 24px;
@@ -639,6 +646,10 @@ a.active, a:hover {
 }
 
 @media(max-width: 550px) {
+	.box.left-image{
+		max-height: 250px;
+		min-width: 250px;
+	}
 	.header h2 {
 		font-size: 30px;
 	}
@@ -649,7 +660,7 @@ a.active, a:hover {
 		font-size: 24px;
 	}
 	label.navbar {
-		font-size: 16px;
+		font-size: 17px;
 		padding-left: 4px;
 	}
 	nav ul li {
@@ -664,7 +675,7 @@ a.active, a:hover {
 		column-count: 1;
 		}
 	.services p {
-		font-size: 16px;
+		font-size: 17px;
 	}
 	.icon {
 		font-size: 70px !important;
@@ -699,7 +710,7 @@ a.active, a:hover {
 		font-size: 20px;
 	}
 	label.navbar {
-		font-size: 12px;
+		font-size: 15px;
 		padding-left: 2px;
 	}
 	.logo {
@@ -727,6 +738,10 @@ a.active, a:hover {
 		padding: 10px 2%;
 	}
 	
+	.services p {
+		font-size: 16px;
+	}
+	
 }
 
 @media(max-width: 400px) {
@@ -736,6 +751,20 @@ a.active, a:hover {
 	}
 	.icon {
 		font-size: 50px !important;
+	}
+	label.navbar {
+		font-size: 14px;
+		padding-left: 2px;
+	}
+}
+
+@media(max-width:370px) {
+	label.navbar {
+		font-size: 12.5px;
+		padding-left: 0px;
+	}
+	.logo {
+		width: 32px;
 	}
 }
 
@@ -747,7 +776,7 @@ a.active, a:hover {
 		font-size: 16px;
 	}
 	.logo {
-		width: 36px;
+		width: 30px;
 	}
 	label.navbar {
 		font-size: 11px;
@@ -949,20 +978,20 @@ a.active, a:hover {
 }
 
 /* Headings and paragraphs */
-.text-about h3 {
+/* .text-about h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-}
+} */
 
-.text-about p {
+/* .text-about p {
     font-size: 1.8rem;
     line-height: 2.4;
     margin-bottom: 18px;
     color: #333;
-}
+} */
 
 /* Links */
-.text-about a {
+/* .text-about a {
     color: #007acc;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -970,7 +999,7 @@ a.active, a:hover {
 
 .text-about a:hover {
     color: #005a99;
-}
+} */
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -991,12 +1020,12 @@ a.active, a:hover {
         width: 80%;       /* Optional: make image smaller on mobile */
     }
 
-    .text-about h3 {
+    /* .text-about h3 {
         font-size: 1.8rem;
     }
 
     .text-about p {
         font-size: 1.05rem;
-    }
+    } */
 }
 
