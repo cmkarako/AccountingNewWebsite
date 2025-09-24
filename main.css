@@ -179,10 +179,26 @@ label {
 }
 
 .footer p {
-	color: white;
+	color: white !important; 
 	padding: 1%;
 	font-size: 20px;
 	text-align: center;
+	text-decoration: none !important;
+}
+.phone-number {
+    color: white !important; /* Make the text white */
+    text-decoration: non !important; /* Remove underline */
+}
+
+.phone-number:hover {
+	color: white !important; /* Keep text white on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+.phone-number:visited {
+	color: white !important; /* Keep text white when visited */
+}
+.phone-number:active {
+	color: white !important; /* Keep text white when active */
 }
 
 *{
@@ -653,6 +669,9 @@ a.active, a:hover {
 	.icon {
 		font-size: 70px !important;
 	}
+	.footer p {
+		padding: 16px;
+	}
 
 }
 
@@ -754,7 +773,8 @@ a.active, a:hover {
 		font-size: 16px;
 	}
 	.footer p {
-		font-size: 16px;
+		font-size: 18px;
+		padding: 18px;
 	}
 	.footer {
 		padding: 20px;
