@@ -35,13 +35,27 @@
 				<i class="fa fa-bars"></i>
 			</label>
 			<label class="navbar"><img class=logo src="logo4.png" alt="MC Accounting and Bookkeeping logo"> MC Accounting and Bookkeeping, LLC</label>
-			<ul>
+			<ul id="nav-links" >
 				<li><a href="#">Home</a></li>
 				<li><a href="#services">Services</a></li>
 				<li><a href="#about">About Us</a></li>
 				<li><a href="#contact">Contact Us</a></li>
 			</ul>
 		</nav>
+
+		<script>
+			// Select all links inside the navigation menu
+			const navLinks = document.querySelectorAll('#nav-links a');
+			const checkBox = document.getElementById('check');
+		
+			// Add a click event listener to each link
+			navLinks.forEach(link => {
+				link.addEventListener('click', () => {
+					// Uncheck the checkbox to close the menu
+					checkBox.checked = false;
+				});
+			});
+		</script>
 
 
 		<div class="header">
