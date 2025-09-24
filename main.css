@@ -200,6 +200,20 @@ label {
 .phone-number:active {
 	color: white !important; /* Keep text white when active */
 }
+.email-link {
+    color: white !important; /* Make the email text white */
+    text-decoration: none !important; /* Remove underline */
+}
+
+.email-link:hover {
+    text-decoration: underline !important; /* Optional: Add underline on hover */
+}
+.email-link:visited {
+	color: white !important; /* Keep text white when visited */
+}
+.email-link:active {
+	color: white !important; /* Keep text white when active */
+}
 
 *{
 	padding: 0;
