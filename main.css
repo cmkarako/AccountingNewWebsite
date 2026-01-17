@@ -5,6 +5,7 @@
 	--light-gray: #ebe8e8;
 	--dark-gray: #555557;
 	--very-light-purple: #f6f5fc;
+	--white: #ffffff;
 }
 
 body {
@@ -21,6 +22,17 @@ form {
 .wrapper {
 	overflow-x:hidden;
 	position:relative;
+}
+
+.title {
+	padding: 0%;
+	margin: 0%;
+	background-color: var(--white);
+}
+.title h3 {
+	padding-top: 3%;
+	margin: 0%;
+	color: var(--dark-purple);
 }
 
 h1 {
@@ -41,13 +53,13 @@ h1 {
 	align-items: center;
 	min-height: 100vh; /* Full viewport height */
 	padding: 20px;
-	background: #f9f9f9;
+	background-color: var(--white);
 	min-height: 830px;
   } 
   
   /* Form container */
    .contact-form {
-	background: #ffffff;
+	background: var(--white);
 	padding: 30px;
 	border-radius: 16px;
 	box-shadow: 0 8px 20px rgba(0,0,0,0.1);
@@ -125,7 +137,7 @@ h1 {
   }
   
   .contact-form .button.submit:hover {
-	background: #357ab8;
+	background: hsl(282, 11%, 58%);
 	transform: translateY(-2px);
   }  
   
@@ -316,7 +328,7 @@ a.active, a:hover {
 }
 
 .header {
-	background-color: var(--dark-purple);
+	background-color: var(--white);
 	margin: 0px 0px;
 	padding: 250px 0;
 	display: flex;
@@ -325,13 +337,16 @@ a.active, a:hover {
 }
 
 .header h2 {
-	width: 100%;
-	color: var(--light-gray);
-	display: flex;
+	width: 80%;
+	color: var(--dark-purple);
+	/* display: flex; */
 	justify-content: center;
+	text-align: center;
 	font-size: 54px;
 	font-family: Optima, san-serif;
 	font-weight: 100;
+	margin-left: 30%;
+	margin-right: 30%;
 }
 
 .header-image {
@@ -341,15 +356,18 @@ a.active, a:hover {
 }
 
 .header h3 {
-	color: var(--light-gray);
+	color: var(--dark-purple);
 	margin-top: 20px;
 	font-size: 20px;
+	margin-left: 30%;
+	margin-right: 30%;
 }
 
 .services {
 	width: 100%;
 	margin: 0px 0px;
-	padding: 60px 3%;
+	padding: 1%;
+	padding-inline: 3%;
 	background: white;
 }
 
@@ -409,8 +427,10 @@ a.active, a:hover {
 	flex-wrap: wrap;
 	color: var(--dark-gray);
 }
+
 .about {
-	padding: 10%;
+	padding: 1%;
+	padding-inline: 12%;
 	flex-direction: row;
 	display: flex;
 	margin: 0px 0px;
@@ -566,8 +586,8 @@ a.active, a:hover {
 	} 
 	.services {
 		width: 100%;
-		margin: 10px 0px;
-		padding: 3%;
+		padding: 1%;
+		padding-inline: 3%;
 		background: white;
 	}
 	.services p {
@@ -631,8 +651,9 @@ a.active, a:hover {
 		padding-top: 5%;
 	}
 	.header h3 {
-		color: var(--light-gray);
 		font-size: 18px;
+		margin-left: 20%;
+		margin-right: 20%;
 	}
 	.checkbtn {
 		display: inline-flex;
@@ -707,6 +728,8 @@ a.active, a:hover {
 	}
 	.header h3 {
 		font-size: 18px;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 	.checkbtn {
 		font-size: 24px;
@@ -720,8 +743,8 @@ a.active, a:hover {
 	}
 
 	.image-text p {
-	font-size: 22px;
-	line-height: 30px;
+		font-size: 22px;
+		line-height: 30px;
 }
 	.service-list {
 		column-count: 1;
