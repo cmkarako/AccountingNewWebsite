@@ -878,6 +878,9 @@ a.active, a:hover {
 	.title h3 {
 		font-size: 32px;
 	}
+	.reviews p {
+		font-size: 19px;
+	}
 }
 
 
