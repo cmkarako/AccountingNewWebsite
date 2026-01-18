@@ -56,6 +56,38 @@ h1 {
 	background-color: var(--white);
 	min-height: 830px;
   } 
+
+  .reviews {
+	width: 100%;
+	padding: 2%;
+	padding-inline: 3%;
+	background-color: var(--white);
+	display: inline-flex;
+	flex-flow: wrap;
+	justify-content: center;
+  }
+
+  .reviews h4 {
+	font-size: 24px;
+  }
+
+  .reviews p {
+	font-size: 22px;
+  }
+
+  .review-box {
+	width: 28%;
+	height: 420px; 
+	margin: 20px;
+	padding-inline: 18px;
+	padding-top: 18px;
+	display: inline-flex;
+	background-color: white;
+	flex-direction: column;
+	justify-content: start;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
   
   /* Form container */
    .contact-form {
@@ -548,6 +580,30 @@ a.active, a:hover {
 	.icon {
 		font-size: 75px !important;
 	}
+	.reviews {
+		width: 100%;
+		padding: 1%;
+		padding-inline: 1%;
+		display: inline-flex;
+		flex-flow: wrap;
+  }
+
+	.reviews h4 {
+		font-size: 20px;
+		padding-top: 0px;
+	}
+
+	.reviews p {
+		font-size: 17px;
+	}
+
+	.review-box {
+		width: 25%;
+		height: 350px; 
+		margin: 20px;
+		padding-inline: 15px;
+		padding-top:15px;
+	}
 }
 
 @media (max-width: 1200px) {
@@ -638,6 +694,30 @@ a.active, a:hover {
 	.icon {
 		font-size: 70px !important;
 	}
+	.reviews {
+		width: 100%;
+		padding: 1%;
+		padding-inline: 1%;
+		display: inline-flex;
+		flex-flow: wrap;
+  }
+
+	.reviews h4 {
+		font-size: 20px;
+		padding-top: 0px;
+	}
+
+	.reviews p {
+		font-size: 16px;
+	}
+
+	.review-box {
+		width: 27%;
+		height: 350px; 
+		margin: 20px;
+		padding-inline: 15px;
+		padding-top:15px;
+	}
 }
 
 @media (max-width: 858px) {
@@ -712,7 +792,120 @@ a.active, a:hover {
 	.footer p {
 		padding: 16px;
 	}
+	.reviews {
+		width: 100%;
+		padding: 1%;
+		padding-inline: 0%;
+		display: inline-flex;
+		flex-flow: wrap;
+  }
 
+	.reviews h4 {
+		font-size: 18px;
+		padding-top: 0px;
+	}
+
+	.reviews p {
+		font-size: 16px;
+	}
+
+	.review-box {
+		width: 27%;
+		height: 350px; 
+		margin: 10px;
+		padding-inline: 15px;
+		padding-top:15px;
+	}
+
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .left-image, .image-text {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .left-image img {
+        max-height: none; /* Let image resize naturally on mobile */
+        width: 80%;       /* Optional: make image smaller on mobile */
+    }
+	.reviews {
+		width: 100%;
+		padding: 1%;
+		padding-inline: 0%;
+		display: inline-flex;
+		flex-flow: wrap;
+  }
+
+	.reviews h4 {
+		font-size: 16px;
+		padding-top: 0px;
+	}
+
+	.reviews p {
+		font-size: 15px;
+	}
+
+	.review-box {
+		width: 27%;
+		height: 350px; 
+		margin: 8px;
+		justify-content: start;
+		padding-inline: 15px;
+		padding-top:15px;
+	}
+}
+
+@media (max-width: 720px) {
+	.reviews {
+		display: flex;
+		flex-direction: column;
+		align-items: center; /* optional: centers boxes */
+	}
+
+	.review-box {
+		width: 100%;
+		max-width: 500px; /* optional: prevents overly wide boxes */
+		height: auto; /* optional: better for mobile */
+	}
+	.title h3 {
+		font-size: 32px;
+	}
+}
+
+
+@media(max-width: 700px) {
+	/* .reviews {
+		width: 100%;
+		padding: .5%;
+		padding-inline: 0%;
+		display: flex;
+		flex-flow: wrap;
+  }
+
+	.reviews h4 {
+		font-size: 16px;
+		padding-top: 0px;
+	}
+
+	.reviews p {
+		font-size: 14px;
+	}
+
+	.review-box {
+		width: 80%;
+		height: 350px; 
+		margin: 2px;
+		padding-inline: 10px;
+		padding-top:12px;
+	} */
 }
 
 @media(max-width: 550px) {
@@ -762,6 +955,16 @@ a.active, a:hover {
 	.service-list {
 		padding: 0%;
 	}
+
+	.review-box {
+		width: 100%;
+		max-width: 400px;
+		height: auto; /* optional: better for mobile */
+	}
+	.title h3 {
+		font-size: 30px;
+		padding-inline: 20%;
+	}
 }
 
 @media(max-width:500px) {
@@ -777,6 +980,13 @@ a.active, a:hover {
 	}
 	.icon {
 		font-size: 65px !important;
+	}
+	.review-box {
+		max-width: 370px;
+	}
+	.title h3 {
+		font-size: 30px;
+		padding-inline: 15%;
 	}
 }
 
@@ -821,7 +1031,9 @@ a.active, a:hover {
 	.footer {
 		padding: 20px;
 	}
-	
+	.review-box {
+		max-width: 330px;
+	}
 }
 
 @media(max-width: 400px) {
@@ -846,6 +1058,11 @@ a.active, a:hover {
 	.logo {
 		width: 32px;
 	}
+	.title h3 {
+		font-size: 28px;
+		padding-inline: 8%;
+	}
+
 }
 
 @media(max-width: 326px) {
@@ -874,6 +1091,9 @@ a.active, a:hover {
 	}
 	.icon {
 		font-size: 40px !important;
+	}
+	.review-box {
+		max-width: 300px;
 	}
 }
 
@@ -996,22 +1216,4 @@ a.active, a:hover {
 
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-    .about {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .left-image, .image-text {
-        max-width: 100%;
-        flex: 1 1 100%;
-    }
-
-    .left-image img {
-        max-height: none; /* Let image resize naturally on mobile */
-        width: 80%;       /* Optional: make image smaller on mobile */
-    }
-}
 
