@@ -40,7 +40,7 @@
 			<ul id="nav-links" >
 				<li><a href="#">Home</a></li>
 				<li><a href="#services">Services</a></li>
-				<li><a href="#about">About Us</a></li>
+				<!-- <li><a href="#about">About Us</a></li> -->
 				<li><a href="#contact">Contact Us</a></li>
 			</ul>
 		</nav>
@@ -60,16 +60,263 @@
 		</script>
 
 
-		<div class="header">
-			<h2 class="fade-in">Let the professionals handle it. </h2>
-			<!-- <h3 class="fade-in-long">With over 10 years of accounting experience, we are here to help your small
-				business succeed!</h3> -->
-			<h3 class="fade-in-long">Expert Accounting & Bookkeeping for Small Businesses — Fixed Pricing, Personalized Service.</h3>
-		</div>
+		<!-- <div class="header"> -->
+			<!--
+  MC Accounting hero section
+  All styles are scoped to .mc-hero, so no other h1/h2/p/a/img on the page is affected.
+  Paste the <style> block into your CSS (or keep it in the page <head>)
+  and paste the <section> where the current hero is.
+-->
 
-	
+<!-- <style>
+  /* ---------- Hero: variables live on the hero only ---------- */
+  .mc-hero {
+    --mc-purple: #3b1064;        /* matches your nav bar */
+    --mc-purple-soft: #5a2d8a;   /* secondary text */
+    --mc-bg: #f6f2fb;            /* very pale lavender background */
+    --mc-accent: #f2b84b;        /* button color: warm gold stands out on purple/white */
+    --mc-accent-hover: #e5a62e;
+    --mc-font: Georgia, "Times New Roman", serif;  /* one font family for the whole hero */
+
+    box-sizing: border-box;
+    background: var(--mc-bg);
+    padding: 64px 24px;
+    font-family: var(--mc-font);
+    color: var(--mc-purple);
+  }
+
+  .mc-hero *,
+  .mc-hero *::before,
+  .mc-hero *::after {
+    box-sizing: border-box;
+  }
+
+  /* ---------- Layout: text left, photo right ---------- */
+  .mc-hero__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  /* ---------- Text ---------- */
+  .mc-hero__title {
+    margin: 0 0 20px;
+    font-family: var(--mc-font);
+    font-size: clamp(2rem, 4.5vw, 3rem);   /* ~32px on phones, up to 48px on desktop */
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.15;
+    color: var(--mc-purple);
+    text-align: left;
+    text-wrap: balance;                     /* avoids a single orphan word on the last line */
+  }
+
+  .mc-hero__sub {
+    margin: 0 0 28px;
+    max-width: 34em;
+    font-family: var(--mc-font);
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    line-height: 1.5;
+    color: var(--mc-purple-soft);
+    text-align: left;
+    text-wrap: pretty;
+  }
+
+  /* ---------- Button + phone ---------- */
+  .mc-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px 24px;
+    margin-bottom: 24px;
+  }
+
+  .mc-hero__btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: var(--mc-accent);
+    color: var(--mc-purple);
+    font-family: var(--mc-font);
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+
+  .mc-hero__btn:hover,
+  .mc-hero__btn:focus-visible {
+    background: var(--mc-accent-hover);
+    transform: translateY(-1px);
+  }
+
+  .mc-hero__phone {
+    font-family: var(--mc-font);
+    font-size: 1.05rem;
+    color: var(--mc-purple);
+    white-space: nowrap;
+  }
+
+  .mc-hero__phone a {
+    color: var(--mc-purple);
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .mc-hero__trust {
+    margin: 0;
+    font-family: var(--mc-font);
+    font-size: 0.9rem;
+    color: var(--mc-purple-soft);
+    text-align: left;
+  }
+
+  /* ---------- Photo ---------- */
+  .mc-hero__photo {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(59, 16, 100, 0.2);
+  }
+
+  /* ---------- Mobile: stack, photo on top ---------- */
+  @media (max-width: 800px) {
+    .mc-hero {
+      padding: 40px 20px;
+    }
+
+    .mc-hero__inner {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .mc-hero__media {
+      order: -1;                 /* photo above the text on phones */
+    }
+
+    .mc-hero__photo {
+      max-width: 240px;
+    }
+
+    .mc-hero__btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style> -->
+
+<section class="mc-hero" aria-labelledby="mc-hero-title">
+  <div class="mc-hero__inner">
+
+    <div class="mc-hero__text">
+      <h1 class="mc-hero__title" id="mc-hero-title">
+        Bookkeeping from a CPA who knows your business.
+      </h1>
+
+      <p class="mc-hero__sub">
+        Bookkeeping, payroll, and sales tax for small businesses.
+        One fixed monthly fee, and you work directly with Maurilio.
+      </p>
+
+      <div class="mc-hero__actions">
+        <a class="mc-hero__btn" href="#contact">Get your fixed monthly quote</a>
+        <span class="mc-hero__phone">or call <a href="tel:+19405957458">(940) 595-7458</a></span>
+      </div>
+
+      <p class="mc-hero__trust">
+        Licensed CPA &middot; Serving small businesses since 2019 &middot; Clients nationwide
+      </p>
+    </div>
+
+    <div class="mc-hero__media">
+      <img
+        class="mc-hero__photo"
+        src="profile.jpg"
+        alt="Maurilio Castorena, CPA"
+        width="380"
+        height="380"
+        loading="eager">
+    </div>
+
+  </div>
+</section>
+			<!-- <h2 class="fade-in">Your books, handled by a CPA who knows your business.</h2>
+			 <h3 class="fade-in-long">With over 10 years of accounting experience, we are here to help your small
+				business succeed!</h3> -->
+			<!-- <h3 class="fade-in-long">Bookkeeping, payroll, and sales tax compliance for small businesses. One fixed monthly fee, and you work directly with Maurilio.</h3> -->
 		
-	<div class="about" id="about">
+		<!-- </div> -->
+<!-- ============ PROOF STRIP: place directly under the hero ============ -->
+<section class="mc-proof" aria-label="Featured client review">
+  <div class="mc-proof__inner">
+    <p class="mc-proof__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+
+    <blockquote style="margin:0;">
+      <p class="mc-proof__quote">
+        &ldquo;After working with various other accountants, I found MC Accounting and Bookkeeping&hellip;
+        He is thoughtful and gets our books managed monthly and on time.
+        He now has both our companies&rsquo; books.&rdquo;
+      </p>
+    </blockquote>
+
+    <p class="mc-proof__who">
+      <strong>Linda Gardner</strong> &middot; Google review
+    </p>
+
+    <a class="mc-proof__more"
+       href="https://share.google/KGIahuh5uWPv3CTas"
+       target="_blank" rel="noopener">Read our Google reviews &rarr;</a>
+  </div>
+</section>
+	
+<!-- ============ HOW IT WORKS: place after Services, before Meet Maurilio ============ -->
+<section class="mc-process" aria-labelledby="mc-process-title">
+  <div class="mc-process__inner">
+
+    <h2 class="mc-process__title" id="mc-process-title">One fixed monthly fee, built around your business</h2>
+
+    <p class="mc-process__intro">
+      No two businesses need the same thing, so there&rsquo;s no standard package.
+      We start with a conversation about what you need, then agree on one fixed monthly fee for that work.
+    </p>
+
+    <ol class="mc-process__steps">
+      <li class="mc-process__step">
+        <h3 class="mc-process__step-title">Tell us about your business</h3>
+        <p class="mc-process__step-text">Call or send a message. We&rsquo;ll talk through your books, payroll, and tax needs.</p>
+      </li>
+      <li class="mc-process__step">
+        <h3 class="mc-process__step-title">Get your fixed quote</h3>
+        <p class="mc-process__step-text">You get one monthly fee for the scope you need, set out in your contract.</p>
+      </li>
+      <li class="mc-process__step">
+        <h3 class="mc-process__step-title">Get set up</h3>
+        <p class="mc-process__step-text">We organize your accounts, and clean up past books if they need it.</p>
+      </li>
+      <li class="mc-process__step">
+        <h3 class="mc-process__step-title">Stay on top of it</h3>
+        <p class="mc-process__step-text">Your books are managed monthly, with reports so you know where your business stands.</p>
+      </li>
+    </ol>
+
+    <div class="mc-process__cta">
+      <a class="mc-process__btn" href="#contact">Get your fixed monthly quote</a>
+      <p class="mc-process__phone">or call <a href="tel:+19405957458">(940) 595-7458</a></p>
+    </div>
+
+  </div>
+</section>
+
+
+
+		
+	<!-- <div class="about" id="about">
 		<div class="box left-image">
 			<h3 id="welcome-script">About Us</h3>
 		</div>
@@ -80,8 +327,9 @@
 				financially confident, compliant, and focused on growth.
 				<br /><br />We operate with a transparent fixed-pricing model, offering you reliable and personalized service. Contracts are tailored to serve you however you need. We provide premium customer service and
 				high quality work by a licensed CPA. Let us know how we can help you today!
-			</p>
+			</p> -->
 
+			
 			<!-- <br/>
 			<br/>
 			<h1>Who We Work With</h1>
@@ -96,9 +344,9 @@
 			<br />
 			<p>Whether you are just getting started or scaling your operations, we offer clear, 
 				responsive, and personalized accounting support—without the overwhelm.</p> -->
-		</div>
+		<!-- </div>
 
-	</div>
+	</div> -->
 
 
 	<div class="title">
@@ -144,11 +392,11 @@
 		</div> -->
 	</div>
 
-	<div class="title">
+	<div class="title" style="background-color: var(--mc-bg);">
 		<h3>Meet our CPA!</h3>
 	</div>
 
-		<div class="about">
+		<div class="about" style="background-color: var(--mc-bg);">
 		<div class="left-image">
 			<img class="image" src="profile.jpg" alt="Maurilio Castorena, CPA">
 		</div>
@@ -176,11 +424,11 @@
 		</div>
 	</div>
 
-	<div class="title">
+	<div class="title" id="services" >
 		<h3>Our Services</h3>
 	</div>
 
-		<div class="services" id="services">
+		<div class="services" >
 			<!-- 			<h3 class="fa-fade">How we can help</h3> -->
 
 			<div class="service-list">
@@ -243,11 +491,11 @@
 		</div>
 	</div>
 
-	<div class="title">
+	<div class="title" id="contact" style="background-color: var(--mc-bg);">
 		<h3>Get in touch!</h3>
 	</div>
 
-	<div class="contact" id="contact">
+	<div class="contact" style="background-color: var(--mc-bg);">
 		<div class="contact-form">
 			<form name="Contact: MC Accounting" method="POST" action="POST" netlify data-netlify="true">
 				<div class="fields">
